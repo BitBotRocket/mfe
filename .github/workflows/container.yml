@@ -20,7 +20,6 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      # workaround for actions-aws-cli@1.1 command failure on github.com
       - name: ACTIONS_ALLOW_UNSECURE_COMMANDS
         run: echo 'ACTIONS_ALLOW_UNSECURE_COMMANDS=true' >> $GITHUB_ENV
 
