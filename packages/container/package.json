@@ -4,7 +4,7 @@
   "scripts": {
     "start" : "webpack serve --config config/webpack.dev.js",
     "build" : "webpack --config config/webpack.prod.js",
-    "dave" : "dave"
+    "dave" : "dave tweak to trigger build"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
