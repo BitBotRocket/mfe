@@ -5,6 +5,9 @@ const packageJson = require('../package.json');
 
 const devConfig = {
   mode: 'development',
+  output: {
+    publicPath: 'http://localhost:8300/'
+  },
   devServer: {
       port: 8300,
       historyApiFallback: {
@@ -18,6 +21,7 @@ const devConfig = {
          name: 'container',
          remotes: {
              marketing: 'marketing@http://localhost:8310/remoteEntry.js',
+             auth: 'auth@http://localhost:8315/remoteEntry.js',
          },
 
          shared: packageJson.dependencies,
